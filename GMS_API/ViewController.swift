@@ -17,10 +17,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         
         
+        //SHOW CURRENT LOCATION
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         self.mapView.isMyLocationEnabled = true
+        
+        
+        
+        
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
